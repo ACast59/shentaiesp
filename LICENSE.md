@@ -1,6 +1,7 @@
 This repository makes use of the following third party libraries:
 
 UIKit 2.27.5 | https://github.com/uikit/uikit | (c) 2014 YOOtheme | MIT License
+
 FontAwesome 4.7 | https://github.com/FortAwesome/Font-Awesome | (c) 2012 Dave Gandy | SIL OFL 1.1
 
 -----------------
