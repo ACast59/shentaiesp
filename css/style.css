@@ -11,8 +11,8 @@ html * {
 /* ---------------------------------- */
 
 .wrapper {
-	max-width: 1366px;
-	padding: 25px;
-	margin-right: auto;
-	margin-left: auto;
+  max-width: 1366px;
+  padding: 25px;
+  margin-right: auto;
+  margin-left: auto;
 }
