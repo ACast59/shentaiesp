@@ -1,11 +1,18 @@
-/*! sHentaiESP.Asia | http://www.shentaiesp.asia | (c) 2018 Angel Castillo | MIT License */
+/*! sHentaiESP.Asia | https://www.shentaiesp.asia | (c) 2018 Angel Castillo | MIT License */
+
+/* Base */
+/* ---------------------------------- */
+
+html * {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 /* Fluid Wrapper */
 /* ---------------------------------- */
 
 .wrapper {
-  max-width: 1366px;
-  padding: 25px;
-  margin-right: auto;
-  margin-left: auto;
+	max-width: 1366px;
+	padding: 25px;
+	margin-right: auto;
+	margin-left: auto;
 }
