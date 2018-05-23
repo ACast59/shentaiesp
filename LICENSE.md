@@ -10,6 +10,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 This repository makes use of the following third party libraries:
 
+JQuery 3.3.1 | https://github.com/jquery/jquery | (c) 2018 The jQuery Foundation | MIT License
+
 UIKit 2.27.5 | https://github.com/uikit/uikit | (c) 2014 YOOtheme | MIT License
 
-FontAwesome 4.7 | https://github.com/FortAwesome/Font-Awesome | (c) 2012 Dave Gandy | SIL OFL 1.1
+FontAwesome 4.7 | https://github.com/FortAwesome/Font-Awesome | (c) 2016 Dave Gandy | SIL OFL 1.1
