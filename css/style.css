@@ -46,21 +46,21 @@ html {
   padding: 30px;
 }
 
-.header-content h1 {
+.header-content a {
+  color: #333333;
+}
+
+.header-content a:hover {
+  text-decoration: none;
+}
+
+.header-content .header-heading {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 2.40rem;
   letter-spacing: 0.5px;
   line-height: 1;
   margin: 0 0 5px 0;
-}
-
-.header-content .header-heading a {
-  color: #333333;
-}
-
-.header-content .header-heading a:hover {
-  text-decoration: none;
 }
 
 .header-content .header-description {
