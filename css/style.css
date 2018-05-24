@@ -181,3 +181,49 @@ html {
     text-align: left;
   }
 }
+
+/* Home Slider */
+/* ---------------------------------- */
+
+.glide {
+  margin-bottom: 5px !important;
+}
+
+.glide__arrows .glide__arrow {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  padding: 10px 30px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: 0;
+}
+
+.glide__arrows .glide__arrow:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.glide__arrows .glide__arrow--left {
+  left: 0.5px;
+}
+
+.glide__arrows .glide__arrow--right {
+  right: 0.5px;
+}
+
+.glide__anchor:hover {
+  text-decoration: none;
+}
+
+.glide__caption {
+  display: block;
+  width: 100%;
+  background-color: #600000;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
