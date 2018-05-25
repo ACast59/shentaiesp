@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('.affiliate-marquee').marquee();
   
-  $('.homepage-carousel').slick({
+  $('.featured-carousel').slick({
     autoplay: true,
     infinite: true,
     slidesToShow: 4,
@@ -27,11 +27,11 @@ $(document).ready(function(){
     }]
   });
   
-  $('.homepage-carousel-controls .carousel-arrow-left').click(function(e) {
+  $('.featured-carousel-controls .carousel-arrow-left').click(function(e) {
     $('.homepage-carousel').slick('slickPrev');
   });
   
-  $('.homepage-carousel-controls .carousel-arrow-right').click(function(e) {
+  $('.featured-carousel-controls .carousel-arrow-right').click(function(e) {
     $('.homepage-carousel').slick('slickNext');
   });
   
