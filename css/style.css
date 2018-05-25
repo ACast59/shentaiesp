@@ -196,7 +196,7 @@ html {
 
 .homepage-carousel-wrap {
   position: relative;
-  margin-bottom: 25px !important;
+  margin-bottom: 25px;
 }
 
 .carousel-anchor img {
