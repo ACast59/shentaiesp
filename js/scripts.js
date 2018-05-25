@@ -1,5 +1,10 @@
 $(document).ready(function(){
-  $('.affiliate-marquee').marquee();
+  $('.affiliate-marquee').marquee({
+    duration: 5000,
+    gap: 5,
+    duplicated: true,
+    pauseOnHover: true
+  });
   
   $('.featured-carousel').slick({
     autoplay: true,
