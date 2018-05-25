@@ -412,6 +412,38 @@ html {
   }
 }
 
+/* Pagination */
+/* ---------------------------------- */
+
+#blog-pager, .blog-pager {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+}
+.showpage a,
+.pagenumber a,
+.totalpages,
+.current {
+  position: relative;
+  display: inline-block;
+  background-color: #f9f9f9;
+  color: #333333;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: 3px solid #eaeaea;
+  margin: 5px;
+  transition: all .3s;
+} 
+
+.showpage a:hover,
+.pagenumber a:hover,
+.current {
+  background: #333333;
+  color: #ffffff;
+  text-decoration:none;
+  border-color: #333333;
+}
+
 /* Sidebar Widgets */
 /* ---------------------------------- */
 
@@ -481,10 +513,11 @@ html {
 
 .prefooter-content .uk-form-select {
   height: 45px;
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #f9f9f9;
+  color: #333333;
   text-align: left;
-  padding-top: 7.5px;
+  padding-top:5px;
+  border: 3px solid #e0e0e0;
 }
 
 .prefooter-content .uk-form-select .uk-icon-caret-down {
@@ -495,4 +528,81 @@ html {
 .prefooter-content .affiliate-marquee {
   width: 100%;
   overflow: hidden;
+}
+
+/* Footer */
+/* ---------------------------------- */
+
+.footer-content {
+  background-color: #333333;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.10rem;
+  padding: 25px;
+  border-top: 3px solid #BB0000;
+}
+
+.footer-content a {
+  color: #ffffff;
+}
+
+.footer-content a:hover {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.footer-content a:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content .footer-copyright {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .footer-content .uk-align-right {
+    float: none;
+    text-align: center;
+  }
+}
+
+.back-to-top,
+.back-to-top:focus {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #BB0000;
+  color: #FAFAFA;
+  cursor: pointer;
+  display: none;
+  transition: line-height .25s;
+    -webkit-transition: line-height .25s;
+  transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.back-to-top:hover {
+  color: #FAFAFA;
+  line-height: 35px;
+  transition: line-height .25s;
+    -webkit-transition: line-height .25s;
+  transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+}
+
+.back-to-top .uk-icon-chevron-up {
+  font-size: 19px;
+  margin-left: 15px;
+}
+
+.back-to-top.show {
+  display: inline;
 }
