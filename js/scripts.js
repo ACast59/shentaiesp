@@ -1,13 +1,13 @@
-$(document).ready(function() {
-  function myFunction() {
-    var x = document.getElementById("site-navbar");
-    if (x.className === "navbar") {
-      x.className += " responsive";
-    } else {
-      x.className = "navbar";
-    }
+function myFunction() {
+  var x = document.getElementById("site-navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
   }
-  
+}
+
+$(document).ready(function() {  
   $('.featured-carousel').slick({
     autoplay: true,
     infinite: true,
