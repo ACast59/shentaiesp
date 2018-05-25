@@ -199,10 +199,6 @@ html {
   margin-bottom: 25px;
 }
 
-.homepage-carousel-anchor img {
-  width: 100%;
-}
-
 .homepage-carousel-caption {
   background-color: #600000;
   color: #ffffff;
@@ -211,6 +207,14 @@ html {
   text-transform: uppercase;
   text-align: center;
   padding: 10px;
+}
+
+.homepage-carousel-anchor:hover {
+  text-decoration: none;
+}
+
+.homepage-carousel-anchor img {
+  width: 100%;
 }
 
 .homepage-carousel-controls .carousel-arrow {
