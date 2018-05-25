@@ -397,12 +397,12 @@ html {
 /* Latest Entries */
 /* ---------------------------------- */
 
-.latest-entries .homepage-post .homepage-post-thumb,
-.latest-entries .homepage-post .homepage-post-thumb img {
+.latest-entries .loop-post .loop-post-thumb,
+.latest-entries .loop-post .loop-post-thumb img {
   height: 160px;
 }
 
-.latest-entries .homepage-post .homepage-post-title {
+.latest-entries .loop-post .loop-post-title {
   font-size: 1rem;
 }
 
