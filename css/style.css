@@ -212,12 +212,12 @@ html {
   margin: 0 -10px;
 }
 
-.homepage-carousel-wrap {
+.featured-carousel-wrap {
   position: relative;
   margin-bottom: 25px;
 }
 
-.homepage-carousel-caption {
+.featured-carousel-caption {
   background-color: #600000;
   color: #ffffff;
   font-family: "Oswald", sans-serif;
@@ -227,15 +227,15 @@ html {
   padding: 10px;
 }
 
-.homepage-carousel-anchor:hover {
+.featured-carousel-anchor:hover {
   text-decoration: none;
 }
 
-.homepage-carousel-anchor img {
+.featured-carousel-anchor img {
   width: 100%;
 }
 
-.homepage-carousel-controls .carousel-arrow {
+.featured-carousel-controls .carousel-arrow {
   position: absolute;
   top: 0;
   background-color: rgba(0, 0, 0, 0.35);
@@ -246,15 +246,15 @@ html {
   border: 0;
 }
 
-.homepage-carousel-controls .carousel-arrow:hover {
+.featured-carousel-controls .carousel-arrow:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.homepage-carousel-controls .carousel-arrow-left {
+.featured-carousel-controls .carousel-arrow-left {
   left: 0;
 }
 
-.homepage-carousel-controls .carousel-arrow-right {
+.featured-carousel-controls .carousel-arrow-right {
   right: 0px;
 }
 
@@ -288,20 +288,20 @@ html {
 /* Entries */
 /* ---------------------------------- */
 
-.homepage-post {
+.loop-post {
   position: relative;
 }
 
-.homepage-post a:hover {
+.loop-post a:hover {
   text-decoration: none;
 }
 
-.homepage-post .homepage-post-thumb {
+.loop-post .loop-post-thumb {
   height: 225px;
   overflow: hidden;
 }
 
-.homepage-post .homepage-post-comments {
+.loop-post .loop-post-comments {
   position: absolute;
   top: 0;
   left: 0;
@@ -312,7 +312,7 @@ html {
   padding: 10px 15px;
 }
 
-.homepage-post .homepage-post-meta {
+.loop-post .loop-post-meta {
   position: absolute;
   top: 0;
   right: 0;
@@ -323,7 +323,7 @@ html {
   padding: 10px 15px;
 }
 
-.homepage-post .homepage-post-thumb img {
+.loop-post .loop-post-thumb img {
   width: 100%;
   height: 225px;
   transition: -webkit-transform .15s ease-in-out;
@@ -337,13 +337,13 @@ html {
   will-change: transform;
 }
 
-.homepage-post:hover .homepage-post-thumb img {
+.loop-post:hover .loop-post-thumb img {
   transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
 }
 
-.homepage-post .homepage-post-title {
+.loop-post .loop-post-title {
   background-color: #f2f2f2;
   color: #333333;
   font-family: "Oswald", sans-serif;
