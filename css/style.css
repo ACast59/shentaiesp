@@ -199,11 +199,11 @@ html {
   margin-bottom: 25px;
 }
 
-.carousel-anchor img {
+.homepage-carousel-anchor img {
   width: 100%;
 }
 
-.carousel-caption {
+.homepage-carousel-caption {
   background-color: #600000;
   color: #ffffff;
   font-family: "Oswald", sans-serif;
@@ -213,7 +213,7 @@ html {
   padding: 10px;
 }
 
-.carousel-controls .carousel-arrow {
+.homepage-carousel-controls .carousel-arrow {
   position: absolute;
   top: 0;
   background-color: rgba(0, 0, 0, 0.35);
@@ -224,14 +224,14 @@ html {
   border: 0;
 }
 
-.carousel-controls .carousel-arrow:hover {
+.homepage-carousel-controls .carousel-arrow:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.carousel-controls .carousel-arrow-left {
+.homepage-carousel-controls .carousel-arrow-left {
   left: 0;
 }
 
-.carousel-controls .carousel-arrow-right {
+.homepage-carousel-controls .carousel-arrow-right {
   right: 0px;
 }
