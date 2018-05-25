@@ -28,11 +28,11 @@ $(document).ready(function(){
   });
   
   $('.featured-carousel-controls .carousel-arrow-left').click(function(e) {
-    $('.homepage-carousel').slick('slickPrev');
+    $('.featured-carousel').slick('slickPrev');
   });
   
   $('.featured-carousel-controls .carousel-arrow-right').click(function(e) {
-    $('.homepage-carousel').slick('slickNext');
+    $('.featured-carousel').slick('slickNext');
   });
   
   $('.motion-carousel').slick({
