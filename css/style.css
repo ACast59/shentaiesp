@@ -540,6 +540,9 @@ a:hover {
   margin-bottom: 30px;
 }
 
+/* Post Social Sharing */
+/* ---------------------------------- */
+
 .post .social-sharing {
   text-align: center;
   margin-bottom: 25px;
@@ -562,6 +565,9 @@ a:hover {
 .post .social-sharing a i {
   margin-right: 5px;
 }
+
+/* Related Content */
+/* ---------------------------------- */
 
 .related-content {
   position: relative;
@@ -601,8 +607,26 @@ a:hover {
   right: 10px;
 }
 
+/* Comments */
+/* ---------------------------------- */
+
 .comments-content {
   margin-top: -10px;
+}
+
+/* Pages / Archives */
+/* ---------------------------------- */
+
+.page .page-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 13px;
+  border-bottom: 3px solid #eaeaea;
+  margin-bottom: 25px;
+}
+
+.page .page-content {
+  margin-bottom: 25px;
 }
 
 /* Sidebar Widgets */
