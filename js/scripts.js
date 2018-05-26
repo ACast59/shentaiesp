@@ -7,7 +7,7 @@ function myFunction() {
   }
 }
 
-$(document).ready(function() {  
+$(document).ready(function() {
   $('.featured-carousel').slick({
     autoplay: true,
     infinite: true,
@@ -62,6 +62,46 @@ $(document).ready(function() {
   
   $('.motion-carousel-controls .carousel-arrow-right').click(function(e) {
     $('.motion-carousel').slick('slickNext');
+  });
+  
+  $('.related-carousel').slick({
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 3,
+    arrows: false,
+    responsive:
+    [{
+      breakpoint: 1080,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+	{
+      breakpoint: 660,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 440,
+      settings: {
+        slidesToShow: 1,
+      }
+    }]
+  });
+  
+  $('.related-carousel-controls .carousel-arrow-left').click(function(e) {
+    $('.related-carousel').slick('slickPrev');
+  });
+  
+  $('.related-carousel-controls .carousel-arrow-right').click(function(e) {
+    $('.related-carousel').slick('slickNext');
   });
   
   $('.affiliate-marquee').marquee({
