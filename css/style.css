@@ -461,15 +461,10 @@ a:hover {
 /* ---------------------------------- */
 
 .post .post-title {
-  background-color: #f9f9f9;
-  padding: 15px;
   font-family: "Oswald", sans-serif;
   font-size: 2rem;
-  line-height: 1;
-  text-align: center;
-  border: 3px solid #eaeaea;
-  margin: 0;
-  margin-bottom: 20px;
+  padding-bottom: 13px;
+  border-bottom: 3px solid #f2f2f2;
 }
 
 .post .post-content h3,
