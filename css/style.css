@@ -629,6 +629,11 @@ a:hover {
   margin-bottom: 25px;
 }
 
+.page .page-content .loop-post .loop-post-thumb,
+.page .page-content .loop-post .loop-post-thumb img {
+  height: 160px;
+}
+
 /* Sidebar Widgets */
 /* ---------------------------------- */
 
