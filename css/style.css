@@ -20,6 +20,14 @@ html {
   }
 }
 
+a {
+	color: #BB0000;
+}
+
+a:hover {
+	color: #900000;
+}
+
 .uk-grid-medium {
   margin-left: -20px;
 }
@@ -372,6 +380,7 @@ html {
   padding: 5px 10px;
   font-size: 0.95rem;
   cursor: pointer;
+  border-radius: 2px;
   border: 0;
 }
 
@@ -491,6 +500,7 @@ html {
   line-height: 3;
   padding: 10px;
   white-space: nowrap;
+  border-radius: 2px;
 }
 
 .tags-widget a:hover {
