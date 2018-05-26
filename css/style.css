@@ -21,11 +21,11 @@ html {
 }
 
 a {
-	color: #BB0000;
+  color: #BB0000;
 }
 
 a:hover {
-	color: #900000;
+  color: #900000;
 }
 
 .uk-grid-medium {
