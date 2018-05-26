@@ -569,6 +569,7 @@ a:hover {
 }
 
 .related-content {
+  position: relative;
   margin-bottom: 25px;
 }
 
@@ -579,6 +580,30 @@ a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 10px 15px;
+}
+
+.related-carousel-controls .carousel-arrow {
+  position: absolute;
+  top: 10px;
+  background-color: #BB0000;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 0;
+}
+
+.related-carousel-controls .carousel-arrow:hover {
+  background-color: #333333;
+  }
+
+.related-carousel-controls .carousel-arrow-left {
+  right: 45px;
+}
+
+.related-carousel-controls .carousel-arrow-right {
+  right: 10px;
 }
 
 .comments-content {
