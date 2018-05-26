@@ -12,6 +12,10 @@ This repository makes use of the following third party libraries:
 
 JQuery 3.3.1 | https://github.com/jquery/jquery | (c) 2018 The jQuery Foundation | MIT License
 
-UIKit 2.27.5 | https://github.com/uikit/uikit | (c) 2014 YOOtheme | MIT License
+UIKit 2.27.5 | https://github.com/uikit/uikit | (c) 2018 YOOtheme | MIT License
 
 FontAwesome 4.7 | https://github.com/FortAwesome/Font-Awesome | (c) 2016 Dave Gandy | SIL OFL 1.1
+
+Slick 1.8 | https://github.com/kenwheeler/slick | (c) 2018 Ken Wheeler | MIT License
+
+JQuery Marquee 1.5 | https://github.com/aamirafridi/jQuery.Marquee | (c) 2017 Aamir Afridi | MIT License
