@@ -48,7 +48,7 @@ pageNavi.show = function(pages, currentPage, totalPages) {
   if (startPage <= 0) {
     startPage = 1;
   }
-  var b = '<span class="pages">Page ' + currentPage + " of " + totalPages + "</span> ";
+  var b = '<span class="pages">Pagina ' + currentPage + " de " + totalPages + "</span> ";
   if (startPage > 1) {
     b = b + ('<a href="' + pages[1] + '">' + pageNaviConf.firstText + "</a>");
   }
