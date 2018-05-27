@@ -9,7 +9,7 @@ function myFunction() {
 
 $(document).ready(function() {
   $.ajax({
-    url: 'https://www.shentaiesp.asia/feeds/posts/default/-/3D Motion?alt=json-in-script&max-results=6',
+    url: 'https://www.shentaiesp.asia/feeds/posts/default/-/Estrenos?alt=json-in-script&max-results=6',
     type: 'get',
     dataType: "jsonp",
     success: function(data) {
