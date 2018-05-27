@@ -432,33 +432,39 @@ a:hover {
 /* Pagination */
 /* ---------------------------------- */
 
-#blog-pager, .blog-pager {
-  display: block;
+.pagenavi {
+  font-weight: 500;
   text-align: center;
-  padding: 5px 0;
+  margin: 15px auto;
 }
-.showpage a,
-.pagenumber a,
-.totalpages,
-.current {
-  position: relative;
-  display: inline-block;
+
+.pagenavi span,
+.pagenavi a {
+display: inline-block;
   background-color: #f9f9f9;
   color: #333333;
   font-size: 1rem;
   padding: 10px 15px;
   border: 3px solid #eaeaea;
   margin: 5px;
-  transition: all .3s;
-} 
+transition: all .3s;
+}
 
-.showpage a:hover,
-.pagenumber a:hover,
-.current {
+.pagenavi a,
+.pagenavi a:link,
+.pagenavi a:visited {
+  color: #000;
+}
+.pagenavi a:hover,
+.pagenavi .current {
   background: #333333;
   color: #ffffff;
   text-decoration:none;
   border-color: #333333;
+}
+
+.pagenavi .pages {
+  cursor: default;
 }
 
 /* Posts */
