@@ -13,24 +13,24 @@ $(document).ready(function() {
     type: 'get',
     dataType: "jsonp",
     success: function(data) {
-      var posturl, posttitle, postthumb, postthumbnail, skeleton = '',
+      var related_posturl, related_posttitle, related_postthumb, related_postthumbnail, related_html = '',
       entry = data.feed.entry;
       if (entry !== undefined) {
-        skeleton = "";
+        related_html = "";
         for (var i = 0; i < entry.length; i++) {
           for (var j=0; j < entry[i].link.length; j++) {
             if (entry[i].link[j].rel == "alternate") {
-              posturl = entry[i].link[j].href;
+              related_posturl = entry[i].link[j].href;
               break;
             }
           }
-          postthumb = entry[i].media$thumbnail.url;
-          postthumbnail = postthumb.replace("/s72-c", "/w350-h225-c");
-          posttitle = entry[i].title.$t;
-          skeleton += '<div><a href="' + posturl + '" class="featured-carousel-anchor" title="' + posttitle + '"><img src="' + postthumbnail + '" alt="' + posttitle + '" /><div class="featured-carousel-caption">' + posttitle + '</div></a></div>';
+          related_postthumb = entry[i].media$thumbnail.url;
+          related_postthumbnail = related_postthumb.replace("/s72-c", "/w350-h225-c");
+          related_posttitle = entry[i].title.$t;
+          related_html += '<div><a href="' + related_posturl + '" class="featured-carousel-anchor" title="' + related_posttitle + '"><img src="' + related_postthumbnail + '" alt="' + related_posttitle + '" /><div class="featured-carousel-caption">' + related_posttitle + '</div></a></div>';
         }
-        skeleton += '';
-        $('.featured-carousel').slick('slickAdd',skeleton);
+        related_html += '';
+        $('.featured-carousel').slick('slickAdd', related_html);
       }
     }
   });
