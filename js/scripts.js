@@ -69,6 +69,38 @@ $(document).ready(function() {
     $('.featured-carousel').slick('slickNext');
   });
   
+  $.ajax({
+    url: 'https://www.shentaiesp.asia/feeds/posts/default/-/3D Motion?alt=json-in-script&max-results=6',
+    type: 'get',
+    dataType: "jsonp",
+    success: function(data) {
+      var motion_posturl, motion_posttitle, motion_postthumb, motion_postedon_months, motion_postedon_iso, motion_postedon, motion_html = '',
+      entry = data.feed.entry;
+      if (entry !== undefined) {
+        motion_html = "";
+        for (var i = 0; i < entry.length; i++) {
+          for (var j=0; j < entry[i].link.length; j++) {
+            if (entry[i].link[j].rel == "alternate") {
+              motion_posturl = entry[i].link[j].href;
+              break;
+            }
+          }
+          motion_postthumb = entry[i].media$thumbnail.url;
+          motion_postthumbnail = motion_postthumb.replace("/s72-c", "/w350-h225-c");
+          motion_posttitle = entry[i].title.$t;
+		  
+		  motion_postedon_months = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
+		  motion_postedon_iso = new Date(entry[i].published.$t);
+		  motion_postedon = motion_postedon_months[motion_postedon_iso.getMonth()] + ' ' + motion_postedon_iso.getDate() + ', ' + motion_postedon_iso.getFullYear();
+          
+          motion_html += '<div class="uk-width-1-2"><div class="loop-post"><a href="' + motion_posturl + '" title="' + motion_posttitle + '"><div class="loop-post-thumb"><img src="' + motion_postthumbnail + '" alt="' + motion_posttitle + '" /></div><div class="loop-post-meta">' + motion_postedon + '</div><h3 class="loop-post-title">' + motion_posttitle + '</h3></a></div></div>';
+        }
+        motion_html += '';
+        $('.motion-carousel').slick('slickAdd', motion_html);
+      }
+    }
+  });
+  
   $('.motion-carousel').slick({
     autoplay: true,
     infinite: true,
