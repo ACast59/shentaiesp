@@ -276,8 +276,9 @@ a:hover {
 .motion-heading,
 .latest-heading,
 .widget-heading,
+.tagged-heading,
 .related-heading,
-.comments-heading{
+.comments-heading {
   display: block;
   width: 100%;
   overflow: auto;
@@ -288,8 +289,9 @@ a:hover {
 .motion-heading .motion-heading-h2,
 .latest-heading .latest-heading-h2,
 .widget-heading-h4,
+.tagged-heading-h4,
 .related-heading-h4,
-.comments-heading-h4{
+.comments-heading-h4 {
   display: inline-block;
   background-color: #BB0000;
   color: #ffffff;
@@ -549,6 +551,30 @@ transition: all .3s;
   display: block;
   color: #990000;
   margin-bottom: 30px;
+}
+
+/* Posts Tags */
+/* ---------------------------------- */
+
+.post-tags {
+  margin-bottom: 25px;
+}
+
+.post-tags a {
+  background-color: #f2f2f2;
+  color: #797979;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2.3;
+  padding: 5px 10px;
+  white-space: nowrap;
+  border-radius: 2px;
+}
+
+.post-tags a:hover {
+  background-color: #e5e5e5;
+  color: #2e2e2e;
+  text-decoration: none;
 }
 
 /* Post Social Sharing */
