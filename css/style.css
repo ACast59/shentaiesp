@@ -749,7 +749,7 @@ transition: all .3s;
 }
 
 .page .page-content pre {
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   text-align:left;
   white-space: pre-wrap;
   border: 3px solid #e9e9e9;
