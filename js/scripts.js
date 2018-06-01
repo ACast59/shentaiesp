@@ -237,5 +237,3 @@ var relatedTitles = new Array,
 relatedImage = new Array,
 relatedTitlesNum = 0,
 relatedUrls = new Array;
-
-var accordion = UIkit.accordion($('.uk-accordion'));
