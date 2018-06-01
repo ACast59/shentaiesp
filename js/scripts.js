@@ -169,8 +169,6 @@ $(document).ready(function() {
     pauseOnHover: true
   });
   
-  var accordion = UIkit.accordion($('.uk-accordion'));
-  
   if ($('.back-to-top').length) {
     var scrollTrigger = 350,
     backToTop = function () {
@@ -239,3 +237,5 @@ var relatedTitles = new Array,
 relatedImage = new Array,
 relatedTitlesNum = 0,
 relatedUrls = new Array;
+
+var accordion = UIkit.accordion($('.uk-accordion'));
