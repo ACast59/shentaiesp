@@ -1,88 +1,47 @@
-function pageNavi(data) {
-  var url = location.href;
-  var sd = url.indexOf("/search/label/") != -1;
-  var a = sd ? url.substr(url.indexOf("/search/label/") + 14, url.length) : "";
-  a = a.indexOf("?") != -1 ? a.substr(0, a.indexOf("?")) : a;
-  var statbackend = sd ? "/search/label/" + a + "?updated-max=" : "/search?updated-max=";
-  var totalItems = data.feed.entry.length;
-  var totalPages = Math.ceil(totalItems / pageNaviConf.perPage);
-  if (totalPages <= 1) {
-    return;
-  }
-  var target = 1;
-  var values = [""];
-  if (sd) {
-    values.push("/search/label/" + a + "?max-results=" + pageNaviConf.perPage);
-  } else {
-    values.push("/?max-results=" + pageNaviConf.perPage);
-  }
-  var page = 2;
-  for (; page <= totalPages; page++) {
-    var i = (page - 1) * pageNaviConf.perPage - 1;
-    var summary = data.feed.entry[i].published.$t;
-    var key = summary.substring(0, 19) + summary.substring(23, 29);
-    key = encodeURIComponent(key);
-    if (url.indexOf(key) != -1) {
-      target = page;
-    }
-    values.push(statbackend + key + "&max-results=" + pageNaviConf.perPage);
-  }
-  pageNavi.show(values, target, totalPages);
+function pagination(a) {
+    var e = "";
+    leftnum = parseInt(numshowpage / 2), leftnum == numshowpage - leftnum && (numshowpage = 2 * leftnum + 1), start = postnumber - leftnum, start < 1 && (start = 1), maximum = parseInt(a / postperpage) + 1, maximum - 1 == a / postperpage && (maximum -= 1), end = start + numshowpage - 1, end > maximum && (end = maximum), e += "<span class='totalpages'>Pagina " + postnumber + " de " + maximum + "</span>";
+    var s = parseInt(postnumber) - 1;
+    postnumber > 1 && (e += 2 == postnumber ? "page" == type ? '<span class="showpage"><a href="' + home_page + '">' + prevpage + "</a></span>" : '<span class="pagenumber"><a href="/search/label/' + lblname1 + "?&max-results=" + postperpage + '">' + prevpage + "</a></span>" : "page" == type ? '<span class="pagenumber"><a href="#" onclick="redirectpage(' + s + ');return false">' + prevpage + "</a></span>" : '<span class="pagenumber"><a href="#" onclick="redirectlabel(' + s + ');return false">' + prevpage + "</a></span>"), start > 1 && (e += "page" == type ? '<span class="pagenumber"><a href="' + home_page + '">1</a></span>' : '<span class="pagenumber"><a href="/search/label/' + lblname1 + "?&max-results=" + postperpage + '">1</a></span>'), start > 2 && (e += "");
+    for (var r = start; r <= end; r++) e += postnumber == r ? '<span class="current">' + r + "</span>" : 1 == r ? "page" == type ? '<span class="pagenumber"><a href="' + home_page + '">1</a></span>' : '<span class="pagenumber"><a href="/search/label/' + lblname1 + "?&max-results=" + postperpage + '">1</a></span>' : "page" == type ? '<span class="pagenumber"><a href="#" onclick="redirectpage(' + r + ');return false">' + r + "</a></span>" : '<span class="pagenumber"><a href="#" onclick="redirectlabel(' + r + ');return false">' + r + "</a></span>";
+    end < maximum - 1 && (e += ""), end < maximum && (e += "page" == type ? '<span class="pagenumber"><a href="#" onclick="redirectpage(' + maximum + ');return false">' + maximum + "</a></span>" : '<span class="pagenumber"><a href="#" onclick="redirectlabel(' + maximum + ');return false">' + maximum + "</a></span>");
+    var n = parseInt(postnumber) + 1;
+    postnumber < maximum && (e += "page" == type ? '<span class="pagenumber"><a href="#" onclick="redirectpage(' + n + ');return false">' + nextpage + "</a></span>" : '<span class="pagenumber"><a href="#" onclick="redirectlabel(' + n + ');return false">' + nextpage + "</a></span>");
+    for (var t = document.getElementsByName("pageArea"), l = document.getElementById("blog-pager"), p = 0; p < t.length; p++) t[p].innerHTML = e;
+    t && t.length > 0 && (e = ""), l && (l.innerHTML = e)
 }
 
-pageNavi.show = function(pages, currentPage, totalPages) {
-  var leftcnt = Math.floor((pageNaviConf.numPages - 1) / 2);
-  var targetSrcDist = pageNaviConf.numPages - 1 - leftcnt;
-  var startPage = currentPage - leftcnt;
-  if (startPage <= 0) {
-    startPage = 1;
-  }
-  endPage = currentPage + targetSrcDist;
-  if (endPage - startPage < pageNaviConf.numPages) {
-    endPage = startPage + pageNaviConf.numPages - 1;
-  }
-  if (endPage > totalPages) {
-    endPage = totalPages;
-    startPage = totalPages - pageNaviConf.numPages + 1;
-  }
-  if (startPage <= 0) {
-    startPage = 1;
-  }
-  var b = '<span class="pages">Pagina ' + currentPage + " de " + totalPages + "</span> ";
-  if (startPage > 1) {
-    b = b + ('<a href="' + pages[1] + '">' + pageNaviConf.firstText + "</a>");
-  }
-  if (currentPage > 1) {
-    b = b + ('<a href="' + pages[currentPage - 1] + '">' + pageNaviConf.prevText + "</a>");
-  }
-  i = startPage;
-  for (; i <= endPage; ++i) {
-    if (i == currentPage) {
-      b = b + ('<span class="current">' + i + "</span>");
-    } else {
-      b = b + ('<a href="' + pages[i] + '">' + i + "</a>");
-    }
-  }
-  if (currentPage < totalPages) {
-    b = b + ('<a href="' + pages[currentPage + 1] + '">' + pageNaviConf.nextText + "</a>");
-  }
-  if (endPage < totalPages) {
-    b = b + ('<a href="' + pages[totalPages] + '">' + pageNaviConf.lastText + "</a>");
-  }
-  document.write(b);
-};
+function paginationall(a) {
+    var e = a.feed,
+        s = parseInt(e.openSearch$totalResults.$t, 10);
+    pagination(s)
+}
 
-(function() {
-  var url = location.href;
-  if (url.indexOf("?q=") != -1 || url.indexOf(".html") != -1) {
-    return;
-  }
-  var s = url.indexOf("/search/label/") + 14;
-  if (s != 13) {
-    var i = url.indexOf("?");
-    var a = i == -1 ? url.substring(s) : url.substring(s, i);
-    document.write('<script type="text/javascript" src="/feeds/posts/summary/-/' + a + '?alt=json-in-script&callback=pageNavi&max-results=99999">\x3c/script>');
-  } else {
-    document.write('<script type="text/javascript" src="/feeds/posts/summary?alt=json-in-script&callback=pageNavi&max-results=99999">\x3c/script>');
-  }
-})();
+function bloggerpage() {
+    var a = urlactivepage; - 1 != a.indexOf("/search/label/") && (lblname1 = -1 != a.indexOf("?updated-max") ? a.substring(a.indexOf("/search/label/") + 14, a.indexOf("?updated-max")) : a.substring(a.indexOf("/search/label/") + 14, a.indexOf("?&max"))), -1 == a.indexOf("?q=") && -1 == a.indexOf(".html") && (-1 == a.indexOf("/search/label/") ? (type = "page", postnumber = -1 != urlactivepage.indexOf("#PageNo=") ? urlactivepage.substring(urlactivepage.indexOf("#PageNo=") + 8, urlactivepage.length) : 1, document.write('<script src="' + home_page + 'feeds/posts/summary?max-results=1&alt=json-in-script&callback=paginationall"></script>')) : (type = "label", -1 == a.indexOf("&max-results=") && (postperpage = 20), postnumber = -1 != urlactivepage.indexOf("#PageNo=") ? urlactivepage.substring(urlactivepage.indexOf("#PageNo=") + 8, urlactivepage.length) : 1, document.write('<script src="' + home_page + "feeds/posts/summary/-/" + lblname1 + '?alt=json-in-script&callback=paginationall&max-results=1" ></script>')))
+}
+
+function redirectpage(a) {
+    jsonstart = (a - 1) * postperpage, nopage = a;
+    var e = document.getElementsByTagName("head")[0],
+        s = document.createElement("script");
+    s.type = "text/javascript", s.setAttribute("src", home_page + "feeds/posts/summary?start-index=" + jsonstart + "&max-results=1&alt=json-in-script&callback=finddatepost"), e.appendChild(s)
+}
+
+function redirectlabel(a) {
+    jsonstart = (a - 1) * postperpage, nopage = a;
+    var e = document.getElementsByTagName("head")[0],
+        s = document.createElement("script");
+    s.type = "text/javascript", s.setAttribute("src", home_page + "feeds/posts/summary/-/" + lblname1 + "?start-index=" + jsonstart + "&max-results=1&alt=json-in-script&callback=finddatepost"), e.appendChild(s)
+}
+
+function finddatepost(a) {
+    post = a.feed.entry[0];
+    var e = post.published.$t.substring(0, 19) + post.published.$t.substring(23, 29),
+        s = encodeURIComponent(e);
+    if ("page" == type) var r = "/search?updated-max=" + s + "&max-results=" + postperpage + "#PageNo=" + nopage;
+    else var r = "/search/label/" + lblname1 + "?updated-max=" + s + "&max-results=" + postperpage + "#PageNo=" + nopage;
+    location.href = r
+}
+var nopage, type, postnumber, lblname1;
+bloggerpage();
