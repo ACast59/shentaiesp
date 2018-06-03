@@ -440,9 +440,11 @@ a:hover {
   text-align: center;
   padding: 15px 0;
 }
+
 .totalpages {
   cursor: default;
 }
+
 .showpage a, .pagenumber a, .totalpages, .current {
   display: inline-block;
   background-color: #f9f9f9;
