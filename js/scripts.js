@@ -165,7 +165,7 @@ $(document).ready(function() {
   $('.affiliate-marquee').marquee({
     duration: 5000,
     gap: 5,
-    duplicated: true,
+    duplicated: false,
     pauseOnHover: true
   });
   
