@@ -435,11 +435,6 @@ a:hover {
 /* Pagination */
 /* ---------------------------------- */
 
-.blog-pager .blog-pager-older-link,
-.blog-pager .blog-pager-newer-link {
-  display: none;
-}
-
 #blog-pager, .blog-pager {
   display: block;
   text-align: center;
