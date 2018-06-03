@@ -435,12 +435,9 @@ a:hover {
 /* Pagination */
 /* ---------------------------------- */
 
+.blog-pager .blog-pager-older-link,
 .blog-pager .blog-pager-newer-link {
-  float: left;
-}
-                    
-.blog-pager .blog-pager-older-link {
-  float: right;
+  display: none;
 }
 
 #blog-pager, .blog-pager {
