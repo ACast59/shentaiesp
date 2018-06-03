@@ -442,6 +442,7 @@ a:hover {
 
 #blog-pager, .blog-pager {
   display: block;
+  text-align: center;
   padding: 15px 0;
 }
 .totalpages {
