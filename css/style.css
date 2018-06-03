@@ -435,42 +435,37 @@ a:hover {
 /* Pagination */
 /* ---------------------------------- */
 
-.blog-pager {
-  font-weight: 500;
-  margin: 15px auto;
-  clear: both;
-}
-
-.blog-pager a {
-  display: inline-block;
-  background-color: #f9f9f9;
-  color: #333333;
-  font-size: 1rem;
-  padding: 10px 15px;
-  border: 3px solid #eaeaea;
-  margin: 5px;
-  transition: all .3s;
-}
-
-.blog-pager a,
-.blog-pager a:link,
-.blog-pager a:visited {
-  color: #000;
-}
-
-.blog-pager a:hover {
-  background: #333333;
-  color: #ffffff;
-  text-decoration:none;
-  border-color: #333333;
-}
-
 .blog-pager .blog-pager-newer-link {
   float: left;
 }
                     
 .blog-pager .blog-pager-older-link {
   float: right;
+}
+
+#blog-pager, .blog-pager {
+  display: block;
+  padding: 15px 0;
+}
+.totalpages {
+  cursor: default;
+}
+.showpage a, .pagenumber a, .totalpages, .current {
+  display: inline-block;
+  background-color: #f9f9f9;
+  color: #333333;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 3px solid #eaeaea;
+  margin: 5px;
+  transition: all .3s;
+} 
+
+.showpage a:hover, .pagenumber a:hover, .current {
+  background: #333333;
+  color: #ffffff;
+  border-color: #333333;
 }
 
 /* Breadcrumbs */
