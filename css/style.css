@@ -719,6 +719,16 @@ a:hover {
   font-family: "FontAwesome";
 }
 
+.page .page-content .uk-accordion .uk-accordion-content .affiliate-sites {
+  display: inline-block;
+  background-color: #eaeaea;
+  padding: 5px;
+}
+
+.page .page-content .uk-accordion .uk-accordion-content .affiliate-sites img {
+  border-radius: 2px;
+} 
+
 .page .page-content .uk-button-group .uk-button:first-child {
   border-radius: 2px 0 0 2px;
 }
@@ -842,6 +852,10 @@ a:hover {
 .prefooter-content .affiliate-marquee {
   width: 100%;
   overflow: hidden;
+}
+
+.prefooter-content .affiliate-marquee img {
+  border-radius: 2px;
 }
 
 /* Footer */
