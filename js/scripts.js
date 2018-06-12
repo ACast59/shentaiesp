@@ -37,6 +37,7 @@ $(document).ready(function() {
   
   $('.featured-carousel').slick({
     autoplay: true,
+    autoplaySpeed: 5000,
     infinite: true,
     slidesToShow: 4,
     arrows: false,
@@ -102,6 +103,7 @@ $(document).ready(function() {
   
   $('.motion-carousel').slick({
     autoplay: true,
+    autoplaySpeed: 5000,
     infinite: true,
     slidesToShow: 2,
     arrows: false,
