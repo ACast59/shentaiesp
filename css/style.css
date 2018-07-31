@@ -723,6 +723,7 @@ a:hover {
   display: inline-block;
   background-color: #eaeaea;
   padding: 5px;
+  margin: 5px;
 }
 
 .page .page-content .uk-accordion .uk-accordion-content .affiliate-sites img {
