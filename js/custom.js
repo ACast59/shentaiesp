@@ -1,4 +1,4 @@
-var HOME = "https://hmanga-online.blogspot.com//";
+var HOME = "https://hmanga-online.blogspot.com/";
 var URL_ACTUAL = window.location.href;
 var page_post = URL_ACTUAL.indexOf(".html") != -1;
 var N_POSTS = 499;
