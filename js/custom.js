@@ -192,7 +192,7 @@ function get_random(g, h) {
   if (b.indexOf("imgur") != -1) {
     b = b.replace(".jpg", "m.jpg")
   }
-  $("#hm-related-mangas").append('<div class="col-6 col-sm-4 col-lg-2 px-2"><div class="card bg-dark mb-3"><a title="' + f + '" href="' + c + '"><img class="card-img-top" src="' + b + '" width="124" height="180" alt="' + f + '" /></a><div class="card-body py-3"><a class="text-white" title="' + f + '" href="' + c + '"><h5 class="card-title text-truncate m-0">' + f + '</h5></a></div></div></div>')
+  $("#hm-related-mangas").append('<div class="col-6 col-sm-4 col-lg-2 px-2"><div class="card bg-dark mb-3"><a href="' + c + '" title="' + f + '"><img class="card-img-top" src="' + b + '" width="124" height="180" alt="' + f + '" /></a><div class="card-body py-3"><a class="text-white" href="' + c + '" title="' + f + '"><h5 class="card-title text-truncate m-0">' + f + '</h5></a></div></div></div>')
 }
 
 function get_feeds(c, d, b, a) {
