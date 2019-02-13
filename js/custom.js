@@ -1,4 +1,4 @@
-var HOME = "http://www.gntai.xyz/";
+var HOME = "https://hmanga-online.blogspot.com//";
 var URL_ACTUAL = window.location.href;
 var page_post = URL_ACTUAL.indexOf(".html") != -1;
 var N_POSTS = 499;
@@ -73,7 +73,7 @@ function do_once() {
 }
 
 $(document).ready(function() {
-	$('#hm-page-list').on('change', function () {
+  $('#hm-page-list').on('change', function () {
     var url = $(this).val();
     if (url) {
       window.location = url;
@@ -81,15 +81,15 @@ $(document).ready(function() {
     return false;
   });
 	
-	$("#hm-chapter-page__prev").click(function() {
-		var a = parseInt(current_page);
-		if ((a > 1)) {
-			window.location = "#" + (a - 1)
-		}
-	});
-	
-	$("#hm-chapter-page__next").click(function() {
-		var a = parseInt(current_page);
+  $("#hm-chapter-page__prev").click(function() {
+    var a = parseInt(current_page);
+    if ((a > 1)) {
+      window.location = "#" + (a - 1)
+    }
+  });
+ 
+  $("#hm-chapter-page__next").click(function() {
+    var a = parseInt(current_page);
 		if (a < pages.length) {
 			window.location = "#" + (a + 1);
 		} else {
