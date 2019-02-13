@@ -11,6 +11,10 @@ body {
   padding: 7.5px 15px;
 }
 
+.status-message a:last-of-type {
+  display: none;
+}
+
 .card .card-title,
 .card .card-header {
   font-weight: 600;
