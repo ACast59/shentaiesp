@@ -141,11 +141,11 @@ a:hover {
 .navbar-dropdown .navbar-dropbtn i {
   margin-left: 5px;
 }
-			
+
 .navbar a:hover, .navbar-dropdown:hover .navbar-dropbtn {
   background-color: #BB0000;
 }
-			
+
 .navbar-droplinks {
   display: none;
   position: absolute;
@@ -821,7 +821,7 @@ a:hover {
 
 .prefooter-content {
   background-color: #f2f2f2;
-  padding: 25px 25px 25px !important;
+  padding: 25px 25px 0;
 }
 
 .footer-widget-title {
@@ -865,6 +865,7 @@ a:hover {
   height: 150px;
   font-weight: 500;
   color: #fff;
+  margin-bottom: 15px;
 }
 
 .ntk-card:hover {
