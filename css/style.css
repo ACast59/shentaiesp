@@ -821,7 +821,7 @@ a:hover {
 
 .prefooter-content {
   background-color: #f2f2f2;
-  padding: 25px 25px 0;
+  padding: 25px 25px 25px !important;
 }
 
 .footer-widget-title {
@@ -857,6 +857,40 @@ a:hover {
 
 .footer-widget-content .affiliate-marquee img {
   border-radius: 2px;
+}
+
+.ntk-card {
+  display: block;
+  position: relative;
+  height: 150px;
+  font-weight: 500;
+  color: #fff;
+}
+.ntk-card > .ntk-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 150px !important;
+  border-radius: 3px;
+}
+.ntk-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #2ECC40;
+  padding: 3px 6px;
+  border-radius: 0 2px 0 3px;
+}
+.ntk-card > .ntk-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 10px 15px;
+  border-radius: 0 0 3px 3px;
 }
 
 /* Footer */
