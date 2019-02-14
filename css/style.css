@@ -177,7 +177,7 @@ a:hover {
   display: block;
 }
 
-@media screen and (max-width: 560px) {				
+@media screen and (max-width: 560px) {
   .navbar a:not(:first-child) {
     display: none;
   }
@@ -283,7 +283,7 @@ a:hover {
   width: 100%;
   overflow: auto;
   background-color: #f2f2f2;
-  margin-bottom: 15px;			
+  margin-bottom: 15px;
 }
 
 .motion-heading .motion-heading-h2,
@@ -711,7 +711,7 @@ a:hover {
 
 .page .page-content .uk-accordion-title:after {
   content: " \f0d7";
-  font-family: "FontAwesome";	
+  font-family: "FontAwesome";
 }
 
 .page .page-content .uk-accordion-title.uk-active:after {
@@ -866,6 +866,11 @@ a:hover {
   font-weight: 500;
   color: #fff;
 }
+
+.ntk-card:hover {
+  color: #fff;
+}
+
 .ntk-card > .ntk-img {
   position: absolute;
   top: 0;
@@ -874,6 +879,7 @@ a:hover {
   height: 150px !important;
   border-radius: 3px;
 }
+
 .ntk-badge {
   position: absolute;
   top: 0;
@@ -882,6 +888,7 @@ a:hover {
   padding: 3px 6px;
   border-radius: 0 2px 0 3px;
 }
+
 .ntk-card > .ntk-title {
   position: absolute;
   bottom: 0;
