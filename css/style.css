@@ -821,7 +821,7 @@ a:hover {
 
 .prefooter-content {
   background-color: #f2f2f2;
-  padding: 25px 25px 0;
+  padding: 25px 25px 10px !important;
 }
 
 .footer-widget-title {
@@ -865,7 +865,7 @@ a:hover {
   height: 150px;
   font-weight: 500;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
 }
 
 .ntk-card:hover {
