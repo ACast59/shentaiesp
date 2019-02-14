@@ -824,7 +824,7 @@ a:hover {
   padding: 25px 25px 0;
 }
 
-.prefooter-content .footer-widget-title {
+.footer-widget-title {
   font-family: "Oswald", sans-serif;
   font-size: 1.35rem;
   text-transform: uppercase;
@@ -832,11 +832,11 @@ a:hover {
   border-bottom: 3px solid #BB0000;
 }
 
-.prefooter-content .footer-widget-content {
+.footer-widget-content {
   margin-bottom: 25px;
 }
 
-.prefooter-content .uk-form-select {
+.footer-widget-content .uk-form-select {
   height: 45px;
   background-color: #f9f9f9;
   color: #333333;
@@ -845,17 +845,17 @@ a:hover {
   border: 3px solid #e0e0e0;
 }
 
-.prefooter-content .uk-form-select .uk-icon-caret-down {
+.footer-widget-content .uk-form-select .uk-icon-caret-down {
   float: right;
   margin-top: 8px;
 }
 
-.prefooter-content .affiliate-marquee {
+.footer-widget-content .affiliate-marquee {
   width: 100%;
   overflow: hidden;
 }
 
-.prefooter-content .affiliate-marquee img {
+.footer-widget-content .affiliate-marquee img {
   border-radius: 2px;
 }
 
