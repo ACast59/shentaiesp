@@ -9,7 +9,7 @@ function navbarFunction() {
 
 $(document).ready(function() {
   $.ajax({
-    url: 'https://www.shentaiesp.asia/feeds/posts/default/-/3D Motion?alt=json-in-script&max-results=6',
+    url: 'https://www.hmanga.asia/feeds/posts/default?alt=json-in-script&max-results=6',
     type: 'get',
     dataType: "jsonp",
     success: function(data) {
@@ -31,7 +31,7 @@ $(document).ready(function() {
           motion_postedon_iso = new Date(entry[i].published.$t);
           motion_postedon = motion_postedon_months[motion_postedon_iso.getMonth()] + ' ' + motion_postedon_iso.getDate() + ', ' + motion_postedon_iso.getFullYear();
           
-          motion_html += '<div class="uk-width-1-2"><div class="loop-post"><a href="' + motion_posturl + '" title="' + motion_posttitle + '"><div class="loop-post-thumb"><img src="' + motion_postthumbnail + '" alt="' + motion_posttitle + '" /></div><div class="loop-post-meta">' + motion_postedon + '</div><h3 class="loop-post-title">' + motion_posttitle + '</h3></a></div></div>';
+          motion_html += '<div class="uk-width-1-3"><div class="loop-post"><a href="' + motion_posturl + '" title="' + motion_posttitle + '"><div class="loop-post-thumb"><img src="' + motion_postthumbnail + '" alt="' + motion_posttitle + '" /></div><div class="loop-post-meta">' + motion_postedon + '</div><h3 class="loop-post-title">' + motion_posttitle + '</h3></a></div></div>';
         }
         motion_html += '';
         $('.motion-carousel').slick('slickAdd', motion_html);
