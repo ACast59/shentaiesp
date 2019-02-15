@@ -25,7 +25,7 @@ $(document).ready(function() {
             }
           }
           motion_postthumb = entry[i].media$thumbnail.url;
-          motion_postthumbnail = motion_postthumb.replace("/s72-c", "/w350-h225-c");
+          motion_postthumbnail = motion_postthumb.replace("/s72-c", "/w225-h250-c");
           motion_posttitle = entry[i].title.$t;
           motion_postedon_months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
           motion_postedon_iso = new Date(entry[i].published.$t);
