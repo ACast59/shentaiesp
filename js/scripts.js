@@ -184,4 +184,4 @@ relatedImage = new Array,
 relatedTitlesNum = 0,
 relatedUrls = new Array;
 
-$("post-content a").addClass( "exo-tg" );
+$(".post-content a").addClass( "exo-tg" );
