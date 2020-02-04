@@ -8,6 +8,7 @@ function navbarFunction() {
 }
 
 $(document).ready(function() {
+  $(".post-content a").addClass("exo-tg");
   $.ajax({
     url: 'https://www.hmanga.asia/feeds/posts/default?alt=json-in-script&max-results=6',
     type: 'get',
@@ -183,5 +184,3 @@ var relatedTitles = new Array,
 relatedImage = new Array,
 relatedTitlesNum = 0,
 relatedUrls = new Array;
-
-$(".post-content a").addClass( "exo-tg" );
