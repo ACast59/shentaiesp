@@ -15,7 +15,7 @@ $(document).ready(function() {
     success: function(data) {
       var motion_posturl, motion_posttitle, motion_postthumb, motion_postthumbnail, motion_postedon_months, motion_postedon_iso, motion_postedon, motion_html = '',
       entry = data.feed.entry;
-      if (entry !== undefined) {
+      if (entry !== null) {
         motion_html = "";
         for (var i = 0; i < entry.length; i++) {
           for (var j=0; j < entry[i].link.length; j++) {
